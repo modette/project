@@ -1,0 +1,9 @@
+# IDE
+/.idea
+
+# Packages
+/node_modules
+/vendor
+
+# Application
+/config/server/local.neon

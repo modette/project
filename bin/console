@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php declare(strict_types = 1);
+
+use App\Boot\Bootstrap;
+use Symfony\Component\Console\Application;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+exit(Bootstrap::boot()
+	->initializeContainer()
+	->getByType(Application::class)
+	->run());

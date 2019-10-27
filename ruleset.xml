@@ -1,0 +1,17 @@
+<ruleset>
+	<!-- Coding Standard -->
+	<rule ref="./vendor/ninjify/coding-standard/contributte.xml"/>
+
+	<!-- Package specific rules -->
+	<rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
+		<properties>
+			<property name="rootNamespaces" type="array" value="
+                src   => App,
+                tests => Tests\App,
+            "/>
+		</properties>
+	</rule>
+
+	<!-- Ignore generated file -->
+	<exclude-pattern>src/Boot/ConfigLoader.php</exclude-pattern>
+</ruleset>
